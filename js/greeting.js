@@ -3,10 +3,10 @@ const today = new Date();
 const hour = today.getHours();
 
 // Here you can change your name
-const name = ' John Doe';
+const name = ' Michael Petersen';
 
 // Here you can change your greetings
-const gree1 = 'Go to Sleep!  ';
+const gree1 = 'Good night,  ';
 const gree2 = 'Good morning!  ';
 const gree3 = 'Good afternoon  ';
 const gree4 = 'Good evening,  ';
@@ -21,5 +21,5 @@ if (hour >= 23 && hour < 5) {
 } else if (hour >= 12 && hour < 17) {
   document.getElementById('greetings').innerText = gree3 + name;
 } else {
-  document.getElementById('greetings').innerText = gree4 + name;
+  document.getElementById('greetings').innerText = gree4 + name + hour;
 }
